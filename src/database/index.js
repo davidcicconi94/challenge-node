@@ -3,7 +3,7 @@ const env = require("../config/index");
 
 const connectDatabase = () => {
   mongoose
-    .connect(`mongodb://localhost/${env.DB}`, {
+    .connect(`mongodb://${env.HOST}/${env.DB}`, {
       useNewUrlParser: true,
     })
     .then((data) => {
