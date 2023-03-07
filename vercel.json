@@ -6,7 +6,10 @@
         "use": "@vercel/node"
       }
     ],
-    "env": {
-      "MONGODB_URI": "mongodb+srv://<usuario>:<contraseña>@<servidor>/<base-de-datos>"
-    }
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "index.js"
+      }
+    ]
   }
