@@ -80,7 +80,7 @@ module.exports = function () {
 
   /**
    * @swagger
-   * /creacliente:
+   * /kpideclient:
    *  get:
    *    summary: GET age's average and standard deviation
    *    tags: [Age]
